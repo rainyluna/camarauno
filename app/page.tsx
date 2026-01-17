@@ -304,7 +304,7 @@ function AboutSection() {
             alt="Nuestro equipo"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-r from-transparent to-black/20 lg:bg-linear-to-l lg:from-zinc-900 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 lg:bg-gradient-to-l lg:from-zinc-900 lg:to-transparent" />
         </div>
 
         {/* Right: Content */}

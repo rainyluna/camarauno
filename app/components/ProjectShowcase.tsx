@@ -48,8 +48,8 @@ export default function ProjectShowcase({ projects, showTitle = true }: ProjectS
                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
                         {/* Gradient Overlays */}
-                        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent" />
-                        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/20" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
                     </div>
 
                     {/* Content */}
