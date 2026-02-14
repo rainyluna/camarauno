@@ -9,36 +9,36 @@ import ProjectShowcase from "./components/ProjectShowcase";
 const galleryImages = [
   // Row 1
   [
-    "/content/fotografia/Fotografía/fotografía_01.jpg",
-    "/content/fotografia/Fotografía/fotografía_02.jpg",
-    "/content/fotografia/Fotografía/fotografía_03.jpg",
-    "/content/fotografia/Fotografía/fotografía_04.jpg",
-    "/content/fotografia/Fotografía/fotografía_05.jpg",
-    "/content/fotografia/Fotografía/fotografía_06.jpg",
-    "/content/fotografia/Fotografía/fotografía_07.jpg",
-    "/content/fotografia/Fotografía/fotografía_08.jpg",
+    "/content/fotografia/Fotografìa/fotografía_01.jpg",
+    "/content/fotografia/Fotografìa/fotografía_02.jpg",
+    "/content/fotografia/Fotografìa/fotografía_03.jpg",
+    "/content/fotografia/Fotografìa/fotografía_04.jpg",
+    "/content/fotografia/Fotografìa/fotografía_05.jpg",
+    "/content/fotografia/Fotografìa/fotografía_06.jpg",
+    "/content/fotografia/Fotografìa/fotografía_07.jpg",
+    "/content/fotografia/Fotografìa/fotografía_08.jpg",
   ],
   // Row 2
   [
-    "/content/fotografia/Fotografía/fotografía_09.jpg",
-    "/content/fotografia/Fotografía/fotografía_10.jpg",
-    "/content/fotografia/Fotografía/fotografía_11.jpg",
-    "/content/fotografia/Fotografía/fotografía_12.jpg",
-    "/content/fotografia/Fotografía/fotografía_13.jpg",
-    "/content/fotografia/Fotografía/fotografía_14.jpg",
-    "/content/fotografia/Fotografía/fotografía_15.jpg",
-    "/content/fotografia/Fotografía/fotografía_16.jpg",
+    "/content/fotografia/Fotografìa/fotografía_09.jpg",
+    "/content/fotografia/Fotografìa/fotografía_10.jpg",
+    "/content/fotografia/Fotografìa/fotografía_11.jpg",
+    "/content/fotografia/Fotografìa/fotografía_12.jpg",
+    "/content/fotografia/Fotografìa/fotografía_13.jpg",
+    "/content/fotografia/Fotografìa/fotografía_14.jpg",
+    "/content/fotografia/Fotografìa/fotografía_15.jpg",
+    "/content/fotografia/Fotografìa/fotografía_16.jpg",
   ],
   // Row 3
   [
-    "/content/fotografia/Fotografía/fotografía_01.jpg",
-    "/content/fotografia/Fotografía/fotografía_02.jpg",
-    "/content/fotografia/Fotografía/fotografía_03.jpg",
-    "/content/fotografia/Fotografía/fotografía_04.jpg",
-    "/content/fotografia/Fotografía/fotografía_05.jpg",
-    "/content/fotografia/Fotografía/fotografía_06.jpg",
-    "/content/fotografia/Fotografía/fotografía_07.jpg",
-    "/content/fotografia/Fotografía/fotografía_08.jpg",
+    "/content/fotografia/Fotografìa/fotografía_01.jpg",
+    "/content/fotografia/Fotografìa/fotografía_02.jpg",
+    "/content/fotografia/Fotografìa/fotografía_03.jpg",
+    "/content/fotografia/Fotografìa/fotografía_04.jpg",
+    "/content/fotografia/Fotografìa/fotografía_05.jpg",
+    "/content/fotografia/Fotografìa/fotografía_06.jpg",
+    "/content/fotografia/Fotografìa/fotografía_07.jpg",
+    "/content/fotografia/Fotografìa/fotografía_08.jpg",
   ],
 ];
 
@@ -302,7 +302,7 @@ function AboutSection() {
           </span>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-8">
-            pensamiento en
+            Pensamiento en
             <br />
             <span className="font-semibold">movimiento</span>
           </h2>

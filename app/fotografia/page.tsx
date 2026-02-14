@@ -9,20 +9,29 @@ const categories = [
 ];
 
 const galleryImages = [
-    "/content/fotografia/images/01.jpg",
-    "/content/fotografia/images/02.jpg",
-    "/content/fotografia/images/03.jpg",
-    "/content/fotografia/images/04.jpg",
-    "/content/fotografia/images/05.jpg",
-    "/content/fotografia/images/06.jpg",
-    "/content/fotografia/images/07.jpg",
-    "/content/fotografia/images/08.jpg",
-    "/content/fotografia/images/09.jpg",
+    "/content/fotografia/Fotografìa/fotografía_01.jpg",
+    "/content/fotografia/Fotografìa/fotografía_02.jpg",
+    "/content/fotografia/Fotografìa/fotografía_03.jpg",
+    "/content/fotografia/Fotografìa/fotografía_04.jpg",
+    "/content/fotografia/Fotografìa/fotografía_05.jpg",
+    "/content/fotografia/Fotografìa/fotografía_06.jpg",
+    "/content/fotografia/Fotografìa/fotografía_07.jpg",
+    "/content/fotografia/Fotografìa/fotografía_08.jpg",
+    "/content/fotografia/Fotografìa/fotografía_09.jpg",
+    "/content/fotografia/Fotografìa/fotografía_10.jpg",
+    "/content/fotografia/Fotografìa/fotografía_11.jpg",
+    "/content/fotografia/Fotografìa/fotografía_12.jpg",
+    "/content/fotografia/Fotografìa/fotografía_13.jpg",
+    "/content/fotografia/Fotografìa/fotografía_14.jpg",
+    "/content/fotografia/Fotografìa/fotografía_15.jpg",
+    "/content/fotografia/Fotografìa/fotografía_16.jpg",
+    "/content/fotografia/Fotografìa/fotografía_17.jpg",
+    "/content/fotografia/Fotografìa/fotografía_18.jpg",
 ];
 
 export default function FotografiaPage() {
     return (
-        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
+        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 pt-24">
 
 
             {/* Hero */}

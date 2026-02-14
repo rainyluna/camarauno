@@ -19,7 +19,7 @@ export default function ContactoPage() {
     };
 
     return (
-        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
+        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 pt-24">
 
 
             <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-88px)]">

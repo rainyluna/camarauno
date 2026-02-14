@@ -26,7 +26,7 @@ const services = [
 
 export default function ServiciosPage() {
     return (
-        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
+        <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 pt-24">
             {/* Hero */}
             <section className="px-8 py-24 lg:px-16">
                 <div className="max-w-4xl">
