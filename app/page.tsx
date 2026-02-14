@@ -315,6 +315,87 @@ function AboutSection() {
 }
 
 
+// ============================================================
+// Servicios Section
+// ============================================================
+function ServiciosSection() {
+  const services = [
+    {
+      title: "Producción de Video",
+      description: "Desde la conceptualización hasta la posproducción, creamos videos que cuentan tu historia de manera impactante.",
+      features: ["Videos corporativos", "Comerciales", "Documentales", "Contenido para redes"],
+      image: "/content/servicios/video.jpg",
+      href: "/video",
+    },
+    {
+      title: "Fotografía Profesional",
+      description: "Capturamos imágenes que comunican, desde eventos hasta productos y retratos corporativos.",
+      features: ["Eventos", "Producto", "Retratos", "Arquitectura"],
+      image: "/content/servicios/foto.jpg",
+      href: "/fotografia",
+    },
+    {
+      title: "Consultoría Audiovisual",
+      description: "Asesoramos a organizaciones en estrategias de gestión y comunicación.",
+      features: ["Apoyo en convocatorias", "Construcción de memoria social", "Visibilización para captar recursos técnicos y financieros"],
+      image: "/content/servicios/consultoria.jpg",
+      href: "/servicios",
+    },
+  ];
+
+  return (
+    <section className="px-8 py-24 lg:px-16 bg-zinc-50 dark:bg-zinc-900/50">
+      <div className="max-w-7xl mx-auto">
+        <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
+          LO QUE HACEMOS
+        </span>
+        <h2 className="text-4xl md:text-5xl font-light mt-4 mb-4">
+          Servicios
+        </h2>
+        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl">
+          Soluciones audiovisuales integrales para organizaciones, empresas y proyectos que buscan comunicar con impacto.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {services.map((service) => (
+            <Link
+              key={service.title}
+              href={service.href}
+              className="group relative h-[420px] overflow-hidden"
+            >
+              {/* Background Image */}
+              <img
+                src={service.image}
+                alt={service.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex flex-col justify-end p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-white/70 mb-4 leading-relaxed">
+                  {service.description}
+                </p>
+                <ul className="space-y-1">
+                  {service.features.map((f) => (
+                    <li key={f} className="text-sm text-white/60 flex items-center gap-2">
+                      <span className="w-1 h-1 bg-white/50 rounded-full" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 // ============================================================
 // Footer
@@ -414,6 +495,9 @@ export default function Home() {
 
       {/* Featured Projects - Social, Empresarial, Propio */}
       <FeaturedProjects />
+
+      {/* Servicios Section */}
+      <ServiciosSection />
 
       {/* Clients Section */}
       <ClientsSection />
