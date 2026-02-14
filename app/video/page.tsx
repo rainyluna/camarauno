@@ -54,7 +54,7 @@ const videoProjects: Project[] = [
         title: "Fundación Colombiana de Linfoma y Leucemia",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Campaña publicitaria con el objetivo de identificar, de manera gráfica y didáctica los síntomas para la prevención de las enfermedades hemato-oncológicas.",
-        image: "https://picsum.photos/seed/salud/1200/800",
+        image: "/content/crecimiento-empresarial/06_linfoma.png",
         tags: ["Salud", "Prevención", "Campaña"],
         href: "https://www.youtube.com/watch?v=nxll4zItKAU"
     },
@@ -81,7 +81,7 @@ const videoProjects: Project[] = [
         title: "Sintaincolbest",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Video informativo acerca de los desafíos y logros obtenidos a través del sindicalismo en SINTRAINCOLBEST a lo largo de su existencia.",
-        image: "https://picsum.photos/seed/sindicato/1200/800",
+        image: "/content/crecimiento-empresarial/09_sintaincolbest.png",
         tags: ["Sindicato", "Logros", "Informativo"],
         href: "https://www.youtube.com/watch?v=xDlNnfyVtcY"
     },
@@ -90,7 +90,7 @@ const videoProjects: Project[] = [
         title: "Temporada de Conciertos Banco de la República",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Cubrimiento del concierto del maestro arpista colombiano Wuilmer López, presentando obras de su autoría.",
-        image: "https://picsum.photos/seed/concierto/1200/800",
+        image: "/content/crecimiento-empresarial/10_conciertos.png",
         tags: ["Música", "Cubrimiento", "Arpa"],
         href: "https://www.youtube.com/watch?v=igbgT_rK4jg"
     },
@@ -118,7 +118,7 @@ const videoProjects: Project[] = [
         title: "Crapaud",
         category: "PROYECTOS DE LA CASA",
         description: "Un sapo aterrado con una característica muy particular, se encuentra con un mundo gris y sombrío al que logra dar color con la ayuda de sus guantes mágicos y la naturaleza.",
-        image: "https://picsum.photos/seed/crapaud/1200/800",
+        image: "/content/proyectos-casa/13_crapaud.png",
         tags: ["Animación", "Fantasía", "Color"],
         href: "https://www.youtube.com/watch?v=UNsVEVn6faM"
     },
