@@ -281,37 +281,47 @@ function ClientsSection() {
 // About Section - Redesigned
 // ============================================================
 function AboutSection() {
+  const gridImages = [
+    "/content/fotografia/Fotografìa/fotografía_01.jpg",
+    "/content/fotografia/Fotografìa/fotografía_03.jpg",
+    "/content/fotografia/Fotografìa/fotografía_05.jpg",
+    "/content/fotografia/Fotografìa/fotografía_07.jpg",
+    "/content/fotografia/Fotografìa/fotografía_09.jpg",
+    "/content/fotografia/Fotografìa/fotografía_11.jpg",
+    "/content/fotografia/Fotografìa/fotografía_13.jpg",
+    "/content/fotografia/Fotografìa/fotografía_15.jpg",
+    "/content/fotografia/Fotografìa/fotografía_17.jpg",
+  ];
+
   return (
     <section className="relative overflow-hidden">
-      {/* Main Content */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Left: Image */}
-        <div className="relative h-[60vh] lg:h-auto min-h-[500px]">
-          <img
-            src="/content/nosotros/nosotros.png"
-            alt="Nuestro equipo"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 lg:bg-gradient-to-l lg:from-zinc-900 lg:to-transparent" />
+        {/* Left: Photo Grid */}
+        <div className="grid grid-cols-3 gap-1">
+          {gridImages.map((src, i) => (
+            <div key={i} className="aspect-square overflow-hidden">
+              <img
+                src={src}
+                alt={`Nuestro trabajo ${i + 1}`}
+                className="w-full h-full object-cover grayscale"
+              />
+            </div>
+          ))}
         </div>
 
         {/* Right: Content */}
-        <div className="bg-zinc-900 text-white px-8 py-20 lg:px-16 lg:py-24 flex flex-col justify-center">
-          <span className="text-sm font-semibold tracking-widest text-zinc-400 mb-4">
-            NOSOTROS
-          </span>
-
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-8">
-            Pensamiento en
+        <div className="bg-zinc-100 dark:bg-zinc-900 px-8 py-20 lg:px-16 lg:py-24 flex flex-col justify-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-8 text-zinc-900 dark:text-zinc-100">
+            «pensamiento
             <br />
-            <span className="font-semibold">movimiento</span>
+            en <span className="font-semibold">movimiento»</span>
           </h2>
 
-          <p className="text-lg text-zinc-300 leading-relaxed mb-6 max-w-xl">
+          <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed mb-6 max-w-xl">
             Somos un equipo de profesionales audiovisuales y sociales comprometidos con convertir tus ideas en videos que impulsan resultados.
           </p>
 
-          <p className="text-zinc-400 leading-relaxed max-w-xl">
+          <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-xl">
             Creemos en el poder del contenido audiovisual como una herramienta estratégica para que organizaciones y personas logren apoyos técnicos, financieros y mayor visibilidad. Nuestros videos no solo validan tus proyectos, también potencian tu difusión en redes y canales multimedia.
           </p>
         </div>
@@ -319,6 +329,7 @@ function AboutSection() {
     </section>
   );
 }
+
 
 // ============================================================
 // Footer
