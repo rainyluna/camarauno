@@ -281,32 +281,16 @@ function ClientsSection() {
 // About Section - Redesigned
 // ============================================================
 function AboutSection() {
-  const gridImages = [
-    "/content/fotografia/Fotografìa/fotografía_01.jpg",
-    "/content/fotografia/Fotografìa/fotografía_03.jpg",
-    "/content/fotografia/Fotografìa/fotografía_05.jpg",
-    "/content/fotografia/Fotografìa/fotografía_07.jpg",
-    "/content/fotografia/Fotografìa/fotografía_09.jpg",
-    "/content/fotografia/Fotografìa/fotografía_11.jpg",
-    "/content/fotografia/Fotografìa/fotografía_13.jpg",
-    "/content/fotografia/Fotografìa/fotografía_15.jpg",
-    "/content/fotografia/Fotografìa/fotografía_17.jpg",
-  ];
-
   return (
     <section className="relative overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Left: Photo Grid */}
-        <div className="grid grid-cols-3 gap-1">
-          {gridImages.map((src, i) => (
-            <div key={i} className="aspect-square overflow-hidden">
-              <img
-                src={src}
-                alt={`Nuestro trabajo ${i + 1}`}
-                className="w-full h-full object-cover grayscale"
-              />
-            </div>
-          ))}
+        {/* Left: Image */}
+        <div className="relative h-[60vh] lg:h-auto min-h-[500px]">
+          <img
+            src="/content/nosotros/nosotros.png"
+            alt="Nuestro equipo"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
 
         {/* Right: Content */}
@@ -329,6 +313,7 @@ function AboutSection() {
     </section>
   );
 }
+
 
 
 // ============================================================
