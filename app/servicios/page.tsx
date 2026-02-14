@@ -6,21 +6,21 @@ const services = [
         title: "Producción de Video",
         description: "Desde la conceptualización hasta la posproducción, creamos videos que cuentan tu historia de manera impactante.",
         features: ["Videos corporativos", "Comerciales", "Documentales", "Sistematización de procesos"],
-        icon: "🎬",
+        image: "/content/servicios/video.jpg",
     },
     {
         id: 2,
         title: "Fotografía Profesional",
         description: "Capturamos imágenes que comunican, desde eventos hasta productos corporativos.",
         features: ["Campañas publicitarias", "Catálogos", "Registro de actividades"],
-        icon: "📷",
+        image: "/content/servicios/foto.jpg",
     },
     {
         id: 3,
         title: "Consultoría Audiovisual",
         description: "Asesoramos a organizaciones en estrategias de gestión y comunicación.",
         features: ["Apoyo en convocatorias", "Construcción de memoria social", "Visibilización para captar recursos técnicos y financieros"],
-        icon: "💡",
+        image: "/content/servicios/consultoria.jpg",
     }
 ];
 
@@ -47,34 +47,39 @@ export default function ServiciosPage() {
 
             {/* Services Grid */}
             <section className="px-8 pb-24 lg:px-16">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                     {services.map((service) => (
                         <article
                             key={service.id}
-                            className="p-8 lg:p-12 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 group last:md:col-span-2"
+                            className="group relative overflow-hidden last:md:col-span-2 last:md:max-w-[calc(50%-0.75rem)]"
                         >
-                            <div className="h-48 overflow-hidden mb-6">
+                            {/* Image with overlay */}
+                            <div className="relative h-72 overflow-hidden">
                                 <img
-                                    src={service.id === 1 ? '/content/servicios/video.jpg' : service.id === 2 ? '/content/servicios/foto.jpg' : '/content/servicios/consultoria.jpg'}
+                                    src={service.image}
                                     alt={service.title}
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                                <h2 className="absolute bottom-6 left-6 right-6 text-2xl lg:text-3xl font-semibold text-white">
+                                    {service.title}
+                                </h2>
                             </div>
-                            <span className="text-5xl mb-6 block">{service.icon}</span>
-                            <h2 className="text-2xl font-medium mb-4 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
-                                {service.title}
-                            </h2>
-                            <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-                                {service.description}
-                            </p>
-                            <ul className="space-y-2">
-                                {service.features.map((feature) => (
-                                    <li key={feature} className="flex items-center gap-2 text-sm text-zinc-500">
-                                        <span className="w-1 h-1 bg-zinc-400 rounded-full" />
-                                        {feature}
-                                    </li>
-                                ))}
-                            </ul>
+
+                            {/* Content */}
+                            <div className="p-6 lg:p-8 bg-zinc-50 dark:bg-zinc-900 border border-t-0 border-zinc-200 dark:border-zinc-800">
+                                <p className="text-zinc-600 dark:text-zinc-400 mb-5 leading-relaxed">
+                                    {service.description}
+                                </p>
+                                <ul className="space-y-2">
+                                    {service.features.map((feature) => (
+                                        <li key={feature} className="flex items-start gap-3 text-sm text-zinc-500 dark:text-zinc-400">
+                                            <span className="mt-1.5 w-1.5 h-1.5 bg-zinc-400 dark:bg-zinc-500 rounded-full shrink-0" />
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </article>
                     ))}
                 </div>
