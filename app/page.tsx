@@ -197,17 +197,11 @@ function HeroVideo() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6">
+        <h1 className="text-6xl md:text-8xl font-light tracking-tight">
           Creamos historias visuales
           <br />
           para tu <TextRotator words={["organización", "empresa", "fundación", "ONG", "marca", "proyecto"]} />
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10">
-          Producción audiovisual profesional que transforma tu visión en contenido impactante
-        </p>
-        <a href="/contacto" className="px-8 py-4 bg-white text-zinc-900 font-semibold tracking-wide hover:bg-zinc-100 transition-colors duration-300 inline-block">
-          COMENZAR PROYECTO
-        </a>
       </div>
 
       {/* Scroll indicator */}
