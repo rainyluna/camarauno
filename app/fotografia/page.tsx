@@ -35,7 +35,10 @@ export default function FotografiaPage() {
                         Fotografía
                     </h1>
                     <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
-                        Capturamos momentos que cuentan historias. Fotografía profesional para eventos, productos, retratos y proyectos especiales.
+                        Desarrollamos campañas publicitarias y catálogos visuales,
+                        pensados estratégicamente para distintos sectores y objetivos
+                        comerciales, capaces de captar la atención, comunicar valor y
+                        convertir miradas en clientes.
                     </p>
                 </div>
             </section>

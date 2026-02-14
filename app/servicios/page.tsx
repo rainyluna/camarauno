@@ -4,63 +4,43 @@ const services = [
     {
         id: 1,
         title: "Producción de Video",
-        description: "Desde la conceptualización hasta la postproducción, creamos videos que cuentan tu historia de manera impactante.",
-        features: ["Documentales", "Comerciales", "Videos corporativos", "Contenido para redes"],
+        description: "Desde la conceptualización hasta la posproducción, creamos videos que cuentan tu historia de manera impactante.",
+        features: ["Videos corporativos", "Comerciales", "Documentales", "Sistematización de procesos"],
         icon: "🎬",
     },
     {
         id: 2,
         title: "Fotografía Profesional",
-        description: "Capturamos imágenes que comunican, desde eventos hasta productos y retratos corporativos.",
-        features: ["Eventos", "Producto", "Retratos", "Arquitectura"],
+        description: "Capturamos imágenes que comunican, desde eventos hasta productos corporativos.",
+        features: ["Campañas publicitarias", "Catálogos", "Registro de actividades"],
         icon: "📷",
     },
     {
         id: 3,
-        title: "Animación y Motion Graphics",
-        description: "Damos vida a tus ideas con animación 2D, 3D y motion graphics profesional.",
-        features: ["Motion graphics", "Animación 2D", "Animación 3D", "Infografías animadas"],
-        icon: "✨",
-    },
-    {
-        id: 4,
-        title: "Diseño Gráfico",
-        description: "Identidad visual, materiales impresos y diseño digital que refuerza tu marca.",
-        features: ["Branding", "Editorial", "Digital", "Packaging"],
-        icon: "🎨",
-    },
-    {
-        id: 5,
-        title: "Streaming y Eventos en Vivo",
-        description: "Transmisión profesional de eventos con múltiples cámaras y producción en tiempo real.",
-        features: ["Multi-cámara", "Overlays personalizados", "Grabación", "Plataformas múltiples"],
-        icon: "📡",
-    },
-    {
-        id: 6,
         title: "Consultoría Audiovisual",
-        description: "Asesoramos a organizaciones en estrategia de contenido y comunicación audiovisual.",
-        features: ["Estrategia", "Capacitación", "Procesos", "Evaluación"],
+        description: "Asesoramos a organizaciones en estrategias de gestión y comunicación.",
+        features: ["Apoyo en convocatorias", "Construcción de memoria social", "Visibilización para captar recursos técnicos y financieros"],
         icon: "💡",
-    },
+    }
 ];
 
 export default function ServiciosPage() {
     return (
         <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
-
-
             {/* Hero */}
             <section className="px-8 py-24 lg:px-16">
                 <div className="max-w-4xl">
                     <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
-                        LO QUE HACEMOS
+                        CÁMARA UNO
                     </span>
                     <h1 className="text-5xl md:text-7xl font-light mt-4 mb-8">
                         Servicios
                     </h1>
                     <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
                         Soluciones audiovisuales integrales para organizaciones, empresas y proyectos que buscan comunicar con impacto.
+                    </p>
+                    <p className="text-lg text-zinc-500 mt-6 max-w-2xl">
+                        Contamos con experiencia en la creación de contenidos audiovisuales para convocatorias sociales y culturales, así como para la postulación a programas de estímulos, premios y procesos de evaluación pública y privada.
                     </p>
                 </div>
             </section>

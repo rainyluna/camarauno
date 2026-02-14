@@ -2,29 +2,134 @@ import Link from "next/link";
 import ProjectShowcase, { Project } from "../components/ProjectShowcase";
 
 const videoProjects: Project[] = [
+    // IMPACTO SOCIAL
     {
-        id: "v1",
-        title: "Voces del Territorio",
-        category: "DOCUMENTAL",
-        description: "Una serie documental que explora las raíces y tradiciones de las comunidades rurales en Colombia.",
-        image: "https://static.wixstatic.com/media/cf0639_97a95f2700a74f76a80499e8ef053185~mv2.jpg/v1/crop/x_0,y_1,w_3000,h_2248/fill/w_1200,h_900,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG20240527114026_edited.jpg",
-        tags: ["Social", "Documental", "Territorio"],
-    },
-    {
-        id: "v2",
-        title: "Campaña Institucional PONES",
-        category: "CORPORATIVO",
-        description: "Video promocional para la Fundación PONES destacando su impacto en la educación y el empoderamiento.",
+        id: "s1",
+        title: "Fundación PONES",
+        category: "IMPACTO SOCIAL",
+        description: "A través de un guion que humaniza cada acción e imágenes que destacan cada rostro, este proyecto visibiliza los procesos y atrae aliados y recursos.",
         image: "https://static.wixstatic.com/media/cf0639_ef445899e73f4a10bf40a004273311dc~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-3465_edited.jpg",
-        tags: ["Corporativo", "Fundación", "Impacto"],
+        tags: ["Social", "Visibilización", "Recursos"],
+        href: "https://www.youtube.com/watch?v=evfTXoCmhzY"
     },
     {
-        id: "v3",
-        title: "Resiliencia Creativa",
-        category: "CONTENIDO CREATIVO",
-        description: "Exploración visual de los procesos artísticos en entornos urbanos contemporáneos.",
-        image: "https://static.wixstatic.com/media/cf0639_10caaa69809a4b31bde166193c00322c~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20240925-WA0037_edited.jpg",
-        tags: ["Arte", "Creativo", "Urbano"],
+        id: "s2",
+        title: "Academia Llano y Joropo",
+        category: "IMPACTO SOCIAL",
+        description: "Sponsor video que busca establecer alianzas que apoyen sus actividades y permitan otorgar becas a quienes no cuentan con recursos económicos.",
+        image: "https://picsum.photos/seed/llano/1200/800",
+        tags: ["Cultura", "Alianzas", "Becas"],
+        href: "https://www.youtube.com/watch?v=ynZX6yUcbrU"
+    },
+    {
+        id: "s3",
+        title: "Fundación SAGALA",
+        category: "IMPACTO SOCIAL",
+        description: "Pieza audiovisual que invita a sumarse a procesos psicosociales y artísticos dirigidos a población con discapacidad intelectual.",
+        image: "https://picsum.photos/seed/sagala/1200/800",
+        tags: ["Inclusión", "Arte", "Psicosocial"],
+        href: "https://www.youtube.com/watch?v=iGJJuglLhTg"
+    },
+    {
+        id: "s4",
+        title: "Fundación Sant’Egidio Colombia",
+        category: "IMPACTO SOCIAL",
+        description: "Documental que narra los retos y desafíos de la fundación en sus procesos de apoyo a población habitante de calle y población migrante.",
+        image: "https://picsum.photos/seed/egidio/1200/800",
+        tags: ["Documental", "Apoyo", "Social"],
+        href: "https://www.youtube.com/watch?v=GcYZbz6mnzw"
+    },
+    {
+        id: "s5",
+        title: "Fundación Guiando Territorio",
+        category: "IMPACTO SOCIAL",
+        description: "Actividad con el propósito de reivindicar el trabajo del campesinado mayor en la ruralidad Bogotana.",
+        image: "https://picsum.photos/seed/territorio/1200/800",
+        tags: ["Campesinado", "Ruralidad", "Memoria"],
+        href: "https://www.youtube.com/watch?v=0sEN-lmzpU8"
+    },
+    // CRECIMIENTO EMPRESARIAL
+    {
+        id: "e1",
+        title: "Fundación Colombiana de Linfoma y Leucemia",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Campaña publicitaria con el objetivo de identificar, de manera gráfica y didáctica los síntomas para la prevención de las enfermedades hemato-oncológicas.",
+        image: "https://picsum.photos/seed/salud/1200/800",
+        tags: ["Salud", "Prevención", "Campaña"],
+        href: "https://www.youtube.com/watch?v=nxll4zItKAU"
+    },
+    {
+        id: "e2",
+        title: "Planetario de Bogotá – Exposición Maestro Al.Vivero",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Piezas publicitarias en el marco de la exposición pictórica del Maestro Alfredo Vivero Paniza, pintor precolombino.",
+        image: "https://picsum.photos/seed/planetario/1200/800",
+        tags: ["Arte", "Exposición", "Cultura"],
+        href: "https://www.youtube.com/watch?v=_3kfzqNjR2g"
+    },
+    {
+        id: "e3",
+        title: "XX Festival Nacional DE Música Campesina",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Graficación y edición de comerciales",
+        image: "https://picsum.photos/seed/festival/1200/800",
+        tags: ["Música", "Comercial", "Edición"],
+        href: "https://www.youtube.com/watch?v=4U4p-jvyyQk"
+    },
+    {
+        id: "e4",
+        title: "Sintaincolbest",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Video informativo acerca de los desafíos y logros obtenidos a través del sindicalismo en SINTRAINCOLBEST a lo largo de su existencia.",
+        image: "https://picsum.photos/seed/sindicato/1200/800",
+        tags: ["Sindicato", "Logros", "Informativo"],
+        href: "https://www.youtube.com/watch?v=xDlNnfyVtcY"
+    },
+    {
+        id: "e5",
+        title: "Temporada de Conciertos Banco de la República",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Cubrimiento del concierto del maestro arpista colombiano Wuilmer López, presentando obras de su autoría.",
+        image: "https://picsum.photos/seed/concierto/1200/800",
+        tags: ["Música", "Cubrimiento", "Arpa"],
+        href: "https://www.youtube.com/watch?v=igbgT_rK4jg"
+    },
+    {
+        id: "e6",
+        title: "Maestro Juan Carlos Contreras “Cuatro en Colores”",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Videoclip musical del sencillo discográfico.",
+        image: "https://picsum.photos/seed/cuatro/1200/800",
+        tags: ["Música", "Videoclip", "Artes"],
+        href: "https://www.youtube.com/watch?v=uftap_3dhi4"
+    },
+    {
+        id: "e7",
+        title: "Encuentro Internacional Maestros del Arpa",
+        category: "CRECIMIENTO EMPRESARIAL",
+        description: "Resumen del cubrimiento de conciertos realizados en los teatros más importantes de Colombia, así como su adaptación en los años de pandemia en formato virtual.",
+        image: "https://picsum.photos/seed/arpa2/1200/800",
+        tags: ["Música", "Internacional", "Resumen"],
+        href: "https://www.youtube.com/watch?v=HiFD-ERpH5A"
+    },
+    // PROYECTOS DE LA CASA
+    {
+        id: "h1",
+        title: "Crapaud",
+        category: "PROYECTOS DE LA CASA",
+        description: "Un sapo aterrado con una característica muy particular, se encuentra con un mundo gris y sombrío al que logra dar color con la ayuda de sus guantes mágicos y la naturaleza.",
+        image: "https://picsum.photos/seed/crapaud/1200/800",
+        tags: ["Animación", "Fantasía", "Color"],
+        href: "https://www.youtube.com/watch?v=UNsVEVn6faM"
+    },
+    {
+        id: "h2",
+        title: "The Adventures of Lula and the Dragonfly",
+        category: "PROYECTOS DE LA CASA",
+        description: "Serie web animada de Lula, una pequeña niña con malos modales que aún no sabe cómo comportarse; sin embargo, su amiga, la sabia Libélula, la guía para que siempre tome la mejor decisión.",
+        image: "https://picsum.photos/seed/lula/1200/800",
+        tags: ["Web Serie", "Animación", "Valores"],
+        href: "https://youtu.be/ZaNau1sbtnA"
     }
 ];
 
@@ -35,13 +140,13 @@ export default function VideoPage() {
             <section className="px-8 py-24 lg:px-16 border-b border-zinc-200 dark:border-zinc-800">
                 <div className="max-w-4xl">
                     <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
-                        SERVICIOS
+                        VIDEO
                     </span>
                     <h1 className="text-5xl md:text-7xl font-light mt-4 mb-8">
-                        Video
+                        Historias en movimiento
                     </h1>
                     <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
-                        Producción audiovisual profesional para documentales, comerciales, contenido corporativo y proyectos que inspiran.
+                        Potenciamos tu comunicación a través del video, el formato líder en consumo digital, brindándote la seguridad y experiencia de una productora audiovisual comprometida con altos estándares de calidad.
                     </p>
                 </div>
             </section>

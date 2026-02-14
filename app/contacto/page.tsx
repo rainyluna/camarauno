@@ -26,13 +26,15 @@ export default function ContactoPage() {
                 {/* Left: Info */}
                 <section className="px-8 py-24 lg:px-16 flex flex-col justify-center">
                     <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
-                        HABLEMOS
+                        CÁMARA UNO
                     </span>
                     <h1 className="text-5xl md:text-7xl font-light mt-4 mb-8">
-                        Contacto
+                        CONTACTO
                     </h1>
                     <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-lg mb-12">
-                        ¿Tienes un proyecto en mente? Nos encantaría escucharte y ayudarte a hacerlo realidad.
+                        Cada proyecto es único y merece una narrativa visual impecable.
+                        Ya sea que necesites contenido para redes sociales, cobertura de eventos
+                        o una campaña publicitaria, estamos aquí para asesorarte.
                     </p>
 
                     <div className="space-y-6">
@@ -40,16 +42,20 @@ export default function ContactoPage() {
                             <h3 className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">
                                 EMAIL
                             </h3>
-                            <a href="mailto:contacto@camarauno.com" className="text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-                                contacto@camarauno.com
+                            <a href="mailto:camaraunoproducciones@gmail.com" className="text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                camaraunoproducciones@gmail.com
                             </a>
                         </div>
                         <div>
                             <h3 className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">
                                 TELÉFONO
                             </h3>
-                            <a href="tel:+573001234567" className="text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-                                +57 300 123 4567
+                            <a href="tel:+573177972003" className="text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                +57 317 797 2003
+                            </a>
+                            <span className="mx-2 text-zinc-300 dark:text-zinc-700">-</span>
+                            <a href="tel:+573058210441" className="text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                +57 305 821 0441
                             </a>
                         </div>
                         <div>
@@ -57,15 +63,15 @@ export default function ContactoPage() {
                                 REDES SOCIALES
                             </h3>
                             <div className="flex gap-4">
-                                <a href="#" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                <a href="https://www.instagram.com/camara_uno_producciones/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
                                     Instagram
                                 </a>
                                 <span className="text-zinc-300 dark:text-zinc-700">|</span>
-                                <a href="#" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                <a href="https://www.youtube.com/@camaraunoproducciones582" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
                                     YouTube
                                 </a>
                                 <span className="text-zinc-300 dark:text-zinc-700">|</span>
-                                <a href="#" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                                <a href="https://www.facebook.com/people/C%C3%A1mara-Uno-Producciones/61576282596571/#" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
                                     Facebook
                                 </a>
                             </div>
