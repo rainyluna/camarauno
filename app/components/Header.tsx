@@ -30,13 +30,13 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`flex items-center justify-between px-8 lg:px-16 fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${showSolid ? 'py-3 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-sm' : 'py-6 bg-transparent'}`}>
+        <header className={`flex items-center justify-between px-8 lg:px-16 fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-3 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-sm' : `py-6 ${isHome ? 'bg-transparent' : 'bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md'}`}`}>
             <div className="flex flex-col">
                 <Link href="/">
                     <img
-                        src={showSolid ? "/logo-mini.svg" : "/logo.svg"}
+                        src={isScrolled ? "/logo-mini.svg" : "/logo.svg"}
                         alt="Cámara Uno"
-                        className={`transition-all duration-300 ${showSolid ? 'h-10' : 'h-16 lg:h-18'} ${showSolid ? 'dark:invert' : 'invert dark:invert'}`}
+                        className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-18'} ${showSolid && !isScrolled ? '' : showSolid ? 'dark:invert' : 'invert dark:invert'}`}
                     />
                 </Link>
             </div>
