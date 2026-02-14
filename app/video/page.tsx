@@ -99,7 +99,7 @@ const videoProjects: Project[] = [
     },
     {
         id: "e6",
-        title: "Maestro Juan Carlos Contreras "Cuatro en Colores"",
+        title: "Maestro Juan Carlos Contreras \u2018Cuatro en Colores\u2019",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Videoclip musical del sencillo discográfico.",
         image: "/content/crecimiento-empresarial/11_contreras.png",
@@ -170,8 +170,8 @@ export default function VideoPage() {
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`px-6 py-2 text-sm font-medium border transition-colors ${activeCategory === cat
-                                    ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 border-zinc-900 dark:border-white'
-                                    : 'bg-transparent text-zinc-600 dark:text-zinc-400 border-zinc-300 dark:border-zinc-700 hover:border-zinc-500 dark:hover:border-zinc-500'
+                                ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 border-zinc-900 dark:border-white'
+                                : 'bg-transparent text-zinc-600 dark:text-zinc-400 border-zinc-300 dark:border-zinc-700 hover:border-zinc-500 dark:hover:border-zinc-500'
                                 }`}
                         >
                             {cat}
