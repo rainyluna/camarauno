@@ -81,7 +81,7 @@ const videoProjects: Project[] = [
         title: "Sintaincolbest",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Video informativo acerca de los desafíos y logros obtenidos a través del sindicalismo en SINTRAINCOLBEST a lo largo de su existencia.",
-        image: "/content/crecimiento-empresarial/09_sintaincolbest.png",
+        image: "/content/crecimiento-empresarial/09_sintraincolbest.png",
         tags: ["Sindicato", "Logros", "Informativo"],
         href: "https://www.youtube.com/watch?v=xDlNnfyVtcY"
     },
