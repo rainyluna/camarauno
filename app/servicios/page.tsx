@@ -51,7 +51,7 @@ export default function ServiciosPage() {
                     {services.map((service) => (
                         <article
                             key={service.id}
-                            className="p-8 lg:p-12 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 group"
+                            className="p-8 lg:p-12 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 group last:md:col-span-2"
                         >
                             <div className="h-48 overflow-hidden mb-6">
                                 <img
