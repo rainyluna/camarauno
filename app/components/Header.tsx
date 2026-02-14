@@ -36,7 +36,7 @@ export default function Header() {
                     <img
                         src={isScrolled ? "/logo-mini.svg" : "/logo.svg"}
                         alt="Cámara Uno"
-                        className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-18'} ${showSolid && !isScrolled ? '' : showSolid ? 'dark:invert' : 'invert dark:invert'}`}
+                        className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-18'} ${isScrolled ? 'dark:invert' : isHome ? 'invert dark:invert' : 'dark:invert'}`}
                     />
                 </Link>
             </div>
