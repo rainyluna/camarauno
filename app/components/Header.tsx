@@ -24,29 +24,29 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`flex items-center justify-between px-8 lg:px-16 sticky top-0 bg-white/80 dark:bg-black backdrop-blur-md z-50 transition-all duration-300 ${isScrolled ? 'py-3 shadow-sm' : 'py-6'}`}>
+        <header className={`flex items-center justify-between px-8 lg:px-16 fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-3 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-sm' : 'py-6 bg-transparent'}`}>
             <div className="flex flex-col">
                 <Link href="/">
                     <img
                         src={isScrolled ? "/logo-mini.svg" : "/logo.svg"}
                         alt="Cámara Uno"
-                        className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-18'} dark:invert`}
+                        className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-18'} ${isScrolled ? 'dark:invert' : 'invert dark:invert'}`}
                     />
                 </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex gap-8 tracking-wide text-zinc-600 dark:text-zinc-400 text-lg items-center">
+            <nav className={`hidden md:flex gap-8 tracking-wide text-lg items-center transition-colors duration-500 ${isScrolled ? 'text-zinc-600 dark:text-zinc-400' : 'text-white/80'}`}>
                 {navLinks.map((link, index) => (
                     <span key={link.name} className="flex items-center gap-8">
                         <Link
                             href={link.href}
-                            className="hover:text-zinc-900 dark:hover:text-zinc-100 cursor-pointer transition-colors"
+                            className={`cursor-pointer transition-colors ${isScrolled ? 'hover:text-zinc-900 dark:hover:text-zinc-100' : 'hover:text-white'}`}
                         >
                             {link.name}
                         </Link>
                         {index < navLinks.length - 1 && (
-                            <span className="text-zinc-300 dark:text-zinc-600">/</span>
+                            <span className={`${isScrolled ? 'text-zinc-300 dark:text-zinc-600' : 'text-white/40'}`}>/</span>
                         )}
                     </span>
                 ))}

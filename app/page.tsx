@@ -189,12 +189,10 @@ function HeroVideo() {
           muted
           playsInline
           className="h-full w-full object-cover"
-          poster="https://picsum.photos/seed/hero/1920/1080"
         >
-          {/* Replace with actual video URL */}
-          <source src="/content/banner-inicial/reel.mp4" type="video/mp4" />
+          <source src="/content/banner-inicial/reel-web.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content Overlay */}
@@ -207,9 +205,9 @@ function HeroVideo() {
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10">
           Producción audiovisual profesional que transforma tu visión en contenido impactante
         </p>
-        <button className="px-8 py-4 bg-white text-zinc-900 font-semibold tracking-wide hover:bg-zinc-100 transition-colors duration-300">
+        <a href="/contacto" className="px-8 py-4 bg-white text-zinc-900 font-semibold tracking-wide hover:bg-zinc-100 transition-colors duration-300 inline-block">
           COMENZAR PROYECTO
-        </button>
+        </a>
       </div>
 
       {/* Scroll indicator */}
