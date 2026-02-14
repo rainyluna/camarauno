@@ -31,14 +31,14 @@ const galleryImages = [
   ],
   // Row 3
   [
-    "/gallery/gallery_14.webp",
-    "/gallery/gallery_15.webp",
-    "/gallery/gallery_16.webp",
-    "/gallery/gallery_01.webp",
-    "/gallery/gallery_02.webp",
-    "/gallery/gallery_03.webp",
-    "/gallery/gallery_04.webp",
-    "/gallery/gallery_05.webp",
+    "/content/fotografia/Fotografía/fotografía_01.jpg",
+    "/content/fotografia/Fotografía/fotografía_02.jpg",
+    "/content/fotografia/Fotografía/fotografía_03.jpg",
+    "/content/fotografia/Fotografía/fotografía_04.jpg",
+    "/content/fotografia/Fotografía/fotografía_05.jpg",
+    "/content/fotografia/Fotografía/fotografía_06.jpg",
+    "/content/fotografia/Fotografía/fotografía_07.jpg",
+    "/content/fotografia/Fotografía/fotografía_08.jpg",
   ],
 ];
 
@@ -199,10 +199,10 @@ function HeroVideo() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6">
-          Creamos historias visuales
+        <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6 uppercase">
+          pensamiento en
           <br />
-          para tu <TextRotator words={["organización", "empresa", "fundación", "ONG", "marca", "proyecto"]} />
+          <span className="font-semibold italic">movimiento</span>
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10">
           Producción audiovisual profesional que transforma tu visión en contenido impactante
@@ -233,17 +233,10 @@ function HeroImageScroller() {
       <ScrollingRow images={galleryImages[2]} speed={20} />
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {/* Smooth radial glow */}
-        <div
-          className="absolute w-[1000px] h-[500px]"
-          style={{
-            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 70%)"
-          }}
-        />
-        <h2 className="relative text-4xl md:text-6xl font-light tracking-tight text-zinc-900 text-center">
-          Creamos historias visuales
+        <h2 className="relative text-4xl md:text-6xl font-light tracking-tight text-zinc-900 text-center uppercase">
+          pensamiento en
           <br />
-          para tu <TextRotator words={["organización", "empresa", "fundación", "ONG", "marca", "proyecto"]} />
+          <span className="font-semibold italic">movimiento</span>
         </h2>
       </div>
     </section>
@@ -419,7 +412,7 @@ function Footer() {
 // ============================================================
 export default function Home() {
   // Toggle this to switch between hero variants
-  const useVideoHero = false;
+  const useVideoHero = true;
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
