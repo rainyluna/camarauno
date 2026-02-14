@@ -197,10 +197,10 @@ function HeroVideo() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6 uppercase">
-          pensamiento en
+        <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6">
+          Creamos historias visuales
           <br />
-          <span className="font-semibold italic">movimiento</span>
+          para tu <TextRotator words={["organización", "empresa", "fundación", "ONG", "marca", "proyecto"]} />
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10">
           Producción audiovisual profesional que transforma tu visión en contenido impactante
@@ -231,10 +231,10 @@ function HeroImageScroller() {
       <ScrollingRow images={galleryImages[2]} speed={20} />
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <h2 className="relative text-4xl md:text-6xl font-light tracking-tight text-zinc-900 text-center uppercase">
-          pensamiento en
+        <h2 className="relative text-4xl md:text-6xl font-light tracking-tight text-white text-center">
+          Creamos historias visuales
           <br />
-          <span className="font-semibold italic">movimiento</span>
+          para tu <TextRotator words={["organización", "empresa", "fundación", "ONG", "marca", "proyecto"]} />
         </h2>
       </div>
     </section>
