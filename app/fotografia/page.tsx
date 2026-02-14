@@ -1,12 +1,6 @@
 import Link from "next/link";
 
-const categories = [
-    { name: "Eventos", count: 24 },
-    { name: "Retratos", count: 18 },
-    { name: "Producto", count: 32 },
-    { name: "Corporativo", count: 15 },
-    { name: "Social", count: 21 },
-];
+
 
 const galleryImages = [
     "/content/fotografia/Fotografìa/fotografía_01.jpg",
@@ -52,22 +46,7 @@ export default function FotografiaPage() {
                 </div>
             </section>
 
-            {/* Categories */}
-            <section className="px-8 lg:px-16 pb-12">
-                <div className="flex flex-wrap gap-4">
-                    <button className="px-6 py-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium text-sm">
-                        Todos
-                    </button>
-                    {categories.map((cat) => (
-                        <button
-                            key={cat.name}
-                            className="px-6 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-medium text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
-                        >
-                            {cat.name} ({cat.count})
-                        </button>
-                    ))}
-                </div>
-            </section>
+
 
             {/* Gallery Grid */}
             <section className="px-8 pb-24 lg:px-16">
