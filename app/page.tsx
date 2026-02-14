@@ -206,9 +206,9 @@ function HeroVideo() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-white/80 rounded-full" />
-        </div>
+        <svg className="w-10 h-6" viewBox="0 0 40 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="4,4 20,18 36,4" />
+        </svg>
       </div>
     </section>
   );
