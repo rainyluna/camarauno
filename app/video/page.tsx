@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import ProjectShowcase, { Project } from "../components/ProjectShowcase";
 
@@ -9,7 +12,7 @@ const videoProjects: Project[] = [
         category: "IMPACTO SOCIAL",
         description: "A través de un guion que humaniza cada acción e imágenes que destacan cada rostro, este proyecto visibiliza los procesos y atrae aliados y recursos.",
         image: "/content/impacto-social/01_pones.png",
-        tags: ["Social", "Visibilización", "Recursos"],
+        tags: ["Inclusión", "Discapacidad", "Donaciones"],
         href: "https://www.youtube.com/watch?v=evfTXoCmhzY"
     },
     {
@@ -18,7 +21,7 @@ const videoProjects: Project[] = [
         category: "IMPACTO SOCIAL",
         description: "Sponsor video que busca establecer alianzas que apoyen sus actividades y permitan otorgar becas a quienes no cuentan con recursos económicos.",
         image: "/content/impacto-social/02_llano.png",
-        tags: ["Cultura", "Alianzas", "Becas"],
+        tags: ["Formación", "Cultura", "Patrocinios"],
         href: "https://www.youtube.com/watch?v=ynZX6yUcbrU"
     },
     {
@@ -27,12 +30,12 @@ const videoProjects: Project[] = [
         category: "IMPACTO SOCIAL",
         description: "Pieza audiovisual que invita a sumarse a procesos psicosociales y artísticos dirigidos a población con discapacidad intelectual.",
         image: "/content/impacto-social/03_sagala.png",
-        tags: ["Inclusión", "Arte", "Psicosocial"],
+        tags: ["Discapacidad", "Voluntariado", "Cuidadores"],
         href: "https://www.youtube.com/watch?v=iGJJuglLhTg"
     },
     {
         id: "s4",
-        title: "Fundación Sant’Egidio Colombia",
+        title: "Fundación Sant'Egidio Colombia",
         category: "IMPACTO SOCIAL",
         description: "Documental que narra los retos y desafíos de la fundación en sus procesos de apoyo a población habitante de calle y población migrante.",
         image: "/content/impacto-social/04_san-egidio.png",
@@ -96,7 +99,7 @@ const videoProjects: Project[] = [
     },
     {
         id: "e6",
-        title: "Maestro Juan Carlos Contreras “Cuatro en Colores”",
+        title: "Maestro Juan Carlos Contreras "Cuatro en Colores"",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Videoclip musical del sencillo discográfico.",
         image: "/content/crecimiento-empresarial/11_contreras.png",
@@ -133,17 +136,25 @@ const videoProjects: Project[] = [
     }
 ];
 
+const categories = ["Todos", "Impacto Social", "Crecimiento Empresarial", "Proyectos de la Casa"];
+
 export default function VideoPage() {
+    const [activeCategory, setActiveCategory] = useState("Todos");
+
+    const filteredProjects = activeCategory === "Todos"
+        ? videoProjects
+        : videoProjects.filter(p => p.category === activeCategory.toUpperCase());
+
     return (
         <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 pt-24">
             {/* Hero */}
             <section className="px-8 py-24 lg:px-16 border-b border-zinc-200 dark:border-zinc-800">
                 <div className="max-w-4xl">
                     <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
-                        VIDEO
+                        SERVICIOS
                     </span>
                     <h1 className="text-5xl md:text-7xl font-light mt-4 mb-8">
-                        Historias en movimiento
+                        Video
                     </h1>
                     <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
                         Potenciamos tu comunicación a través del video, el formato líder en consumo digital, brindándote la seguridad y experiencia de una productora audiovisual comprometida con altos estándares de calidad.
@@ -151,8 +162,26 @@ export default function VideoPage() {
                 </div>
             </section>
 
+            {/* Category Filters */}
+            <section className="px-8 py-8 lg:px-16 border-b border-zinc-200 dark:border-zinc-800">
+                <div className="flex flex-wrap gap-4">
+                    {categories.map((cat) => (
+                        <button
+                            key={cat}
+                            onClick={() => setActiveCategory(cat)}
+                            className={`px-6 py-2 text-sm font-medium border transition-colors ${activeCategory === cat
+                                    ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 border-zinc-900 dark:border-white'
+                                    : 'bg-transparent text-zinc-600 dark:text-zinc-400 border-zinc-300 dark:border-zinc-700 hover:border-zinc-500 dark:hover:border-zinc-500'
+                                }`}
+                        >
+                            {cat}
+                        </button>
+                    ))}
+                </div>
+            </section>
+
             {/* Immersive Video Projects */}
-            <ProjectShowcase projects={videoProjects} showTitle={false} />
+            <ProjectShowcase projects={filteredProjects} showTitle={false} />
 
             {/* CTA */}
             <section className="px-8 py-24 lg:px-16 text-center bg-zinc-50 dark:bg-zinc-900/50">
