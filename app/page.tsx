@@ -9,25 +9,25 @@ import ProjectShowcase from "./components/ProjectShowcase";
 const galleryImages = [
   // Row 1
   [
-    "/gallery/gallery_01.webp",
-    "/gallery/gallery_02.webp",
-    "/gallery/gallery_03.webp",
-    "/gallery/gallery_04.webp",
-    "/gallery/gallery_05.webp",
-    "/gallery/gallery_06.webp",
-    "/gallery/gallery_07.webp",
-    "/gallery/gallery_01.webp", // Repeating slightly to fill the row
+    "/content/fotografia/Fotografía/fotografía_01.jpg",
+    "/content/fotografia/Fotografía/fotografía_02.jpg",
+    "/content/fotografia/Fotografía/fotografía_03.jpg",
+    "/content/fotografia/Fotografía/fotografía_04.jpg",
+    "/content/fotografia/Fotografía/fotografía_05.jpg",
+    "/content/fotografia/Fotografía/fotografía_06.jpg",
+    "/content/fotografia/Fotografía/fotografía_07.jpg",
+    "/content/fotografia/Fotografía/fotografía_08.jpg",
   ],
   // Row 2
   [
-    "/gallery/gallery_08.webp",
-    "/gallery/gallery_09.webp",
-    "/gallery/gallery_10.webp",
-    "/gallery/gallery_11.webp",
-    "/gallery/gallery_12.webp",
-    "/gallery/gallery_13.webp",
-    "/gallery/gallery_08.webp",
-    "/gallery/gallery_09.webp",
+    "/content/fotografia/Fotografía/fotografía_09.jpg",
+    "/content/fotografia/Fotografía/fotografía_10.jpg",
+    "/content/fotografia/Fotografía/fotografía_11.jpg",
+    "/content/fotografia/Fotografía/fotografía_12.jpg",
+    "/content/fotografia/Fotografía/fotografía_13.jpg",
+    "/content/fotografia/Fotografía/fotografía_14.jpg",
+    "/content/fotografia/Fotografía/fotografía_15.jpg",
+    "/content/fotografia/Fotografía/fotografía_16.jpg",
   ],
   // Row 3
   [
@@ -49,7 +49,7 @@ const featuredProjects = [
     title: "Crecimiento Empresarial",
     category: "EMPRESARIAL",
     description: "Contenido que potencia la comunicación y la conquista de los objetivos.",
-    image: "https://picsum.photos/seed/business1/800/600",
+    image: "/content/crecimiento-empresarial/06_linfoma.png",
     tags: ["Comunicación", "Estrategia", "Objetivos"],
     href: "https://www.youtube.com/watch?v=nxll4zItKAU"
   },
@@ -58,7 +58,7 @@ const featuredProjects = [
     title: "Impacto Social",
     category: "SOCIAL",
     description: "Piezas audiovisuales que impulsan la inclusión y el cambio social visibilizando causas importantes.",
-    image: "https://picsum.photos/seed/social1/800/600",
+    image: "/content/impacto-social/01_pones.png",
     tags: ["Inclusión", "Cambio Social", "Causas"],
     href: "https://www.youtube.com/watch?v=evfTXoCmhzY"
   },
@@ -67,7 +67,7 @@ const featuredProjects = [
     title: "Proyectos de la casa",
     category: "CREATIVO",
     description: "Descubre el corazón creativo de nuestra compañía.",
-    image: "https://picsum.photos/seed/creative1/800/600",
+    image: "/content/proyectos-casa/13_crapaud.png",
     tags: ["Creatividad", "Original", "Core"],
     href: "https://youtu.be/ZaNau1sbtnA"
   },
@@ -192,7 +192,7 @@ function HeroVideo() {
           poster="https://picsum.photos/seed/hero/1920/1080"
         >
           {/* Replace with actual video URL */}
-          <source src="/video-placeholder.mp4" type="video/mp4" />
+          <source src="/content/banner-inicial/reel.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -303,7 +303,7 @@ function AboutSection() {
         {/* Left: Image */}
         <div className="relative h-[60vh] lg:h-auto min-h-[500px]">
           <img
-            src="https://picsum.photos/seed/team/1200/800"
+            src="/content/nosotros/nosotros.png"
             alt="Nuestro equipo"
             className="absolute inset-0 w-full h-full object-cover"
           />

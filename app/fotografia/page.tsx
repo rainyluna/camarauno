@@ -9,15 +9,15 @@ const categories = [
 ];
 
 const galleryImages = [
-    "https://picsum.photos/seed/foto1/600/400",
-    "https://picsum.photos/seed/foto2/400/600",
-    "https://picsum.photos/seed/foto3/600/400",
-    "https://picsum.photos/seed/foto4/600/600",
-    "https://picsum.photos/seed/foto5/400/600",
-    "https://picsum.photos/seed/foto6/600/400",
-    "https://picsum.photos/seed/foto7/600/600",
-    "https://picsum.photos/seed/foto8/400/600",
-    "https://picsum.photos/seed/foto9/600/400",
+    "/content/fotografia/images/01.jpg",
+    "/content/fotografia/images/02.jpg",
+    "/content/fotografia/images/03.jpg",
+    "/content/fotografia/images/04.jpg",
+    "/content/fotografia/images/05.jpg",
+    "/content/fotografia/images/06.jpg",
+    "/content/fotografia/images/07.jpg",
+    "/content/fotografia/images/08.jpg",
+    "/content/fotografia/images/09.jpg",
 ];
 
 export default function FotografiaPage() {

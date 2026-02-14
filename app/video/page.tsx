@@ -8,7 +8,7 @@ const videoProjects: Project[] = [
         title: "Fundación PONES",
         category: "IMPACTO SOCIAL",
         description: "A través de un guion que humaniza cada acción e imágenes que destacan cada rostro, este proyecto visibiliza los procesos y atrae aliados y recursos.",
-        image: "https://static.wixstatic.com/media/cf0639_ef445899e73f4a10bf40a004273311dc~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-3465_edited.jpg",
+        image: "/content/impacto-social/01_pones.png",
         tags: ["Social", "Visibilización", "Recursos"],
         href: "https://www.youtube.com/watch?v=evfTXoCmhzY"
     },
@@ -17,7 +17,7 @@ const videoProjects: Project[] = [
         title: "Academia Llano y Joropo",
         category: "IMPACTO SOCIAL",
         description: "Sponsor video que busca establecer alianzas que apoyen sus actividades y permitan otorgar becas a quienes no cuentan con recursos económicos.",
-        image: "https://picsum.photos/seed/llano/1200/800",
+        image: "/content/impacto-social/02_llano.png",
         tags: ["Cultura", "Alianzas", "Becas"],
         href: "https://www.youtube.com/watch?v=ynZX6yUcbrU"
     },
@@ -26,7 +26,7 @@ const videoProjects: Project[] = [
         title: "Fundación SAGALA",
         category: "IMPACTO SOCIAL",
         description: "Pieza audiovisual que invita a sumarse a procesos psicosociales y artísticos dirigidos a población con discapacidad intelectual.",
-        image: "https://picsum.photos/seed/sagala/1200/800",
+        image: "/content/impacto-social/03_sagala.png",
         tags: ["Inclusión", "Arte", "Psicosocial"],
         href: "https://www.youtube.com/watch?v=iGJJuglLhTg"
     },
@@ -35,7 +35,7 @@ const videoProjects: Project[] = [
         title: "Fundación Sant’Egidio Colombia",
         category: "IMPACTO SOCIAL",
         description: "Documental que narra los retos y desafíos de la fundación en sus procesos de apoyo a población habitante de calle y población migrante.",
-        image: "https://picsum.photos/seed/egidio/1200/800",
+        image: "/content/impacto-social/04_san-egidio.png",
         tags: ["Documental", "Apoyo", "Social"],
         href: "https://www.youtube.com/watch?v=GcYZbz6mnzw"
     },
@@ -44,7 +44,7 @@ const videoProjects: Project[] = [
         title: "Fundación Guiando Territorio",
         category: "IMPACTO SOCIAL",
         description: "Actividad con el propósito de reivindicar el trabajo del campesinado mayor en la ruralidad Bogotana.",
-        image: "https://picsum.photos/seed/territorio/1200/800",
+        image: "/content/impacto-social/05_territorio.png",
         tags: ["Campesinado", "Ruralidad", "Memoria"],
         href: "https://www.youtube.com/watch?v=0sEN-lmzpU8"
     },
@@ -63,7 +63,7 @@ const videoProjects: Project[] = [
         title: "Planetario de Bogotá – Exposición Maestro Al.Vivero",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Piezas publicitarias en el marco de la exposición pictórica del Maestro Alfredo Vivero Paniza, pintor precolombino.",
-        image: "https://picsum.photos/seed/planetario/1200/800",
+        image: "/content/crecimiento-empresarial/07_planetario.png",
         tags: ["Arte", "Exposición", "Cultura"],
         href: "https://www.youtube.com/watch?v=_3kfzqNjR2g"
     },
@@ -72,7 +72,7 @@ const videoProjects: Project[] = [
         title: "XX Festival Nacional DE Música Campesina",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Graficación y edición de comerciales",
-        image: "https://picsum.photos/seed/festival/1200/800",
+        image: "/content/crecimiento-empresarial/08_festival.png",
         tags: ["Música", "Comercial", "Edición"],
         href: "https://www.youtube.com/watch?v=4U4p-jvyyQk"
     },
@@ -99,7 +99,7 @@ const videoProjects: Project[] = [
         title: "Maestro Juan Carlos Contreras “Cuatro en Colores”",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Videoclip musical del sencillo discográfico.",
-        image: "https://picsum.photos/seed/cuatro/1200/800",
+        image: "/content/crecimiento-empresarial/11_contreras.png",
         tags: ["Música", "Videoclip", "Artes"],
         href: "https://www.youtube.com/watch?v=uftap_3dhi4"
     },
@@ -108,7 +108,7 @@ const videoProjects: Project[] = [
         title: "Encuentro Internacional Maestros del Arpa",
         category: "CRECIMIENTO EMPRESARIAL",
         description: "Resumen del cubrimiento de conciertos realizados en los teatros más importantes de Colombia, así como su adaptación en los años de pandemia en formato virtual.",
-        image: "https://picsum.photos/seed/arpa2/1200/800",
+        image: "/content/crecimiento-empresarial/12_arpa.png",
         tags: ["Música", "Internacional", "Resumen"],
         href: "https://www.youtube.com/watch?v=HiFD-ERpH5A"
     },
@@ -127,7 +127,7 @@ const videoProjects: Project[] = [
         title: "The Adventures of Lula and the Dragonfly",
         category: "PROYECTOS DE LA CASA",
         description: "Serie web animada de Lula, una pequeña niña con malos modales que aún no sabe cómo comportarse; sin embargo, su amiga, la sabia Libélula, la guía para que siempre tome la mejor decisión.",
-        image: "https://picsum.photos/seed/lula/1200/800",
+        image: "/content/proyectos-casa/14_lula.png",
         tags: ["Web Serie", "Animación", "Valores"],
         href: "https://youtu.be/ZaNau1sbtnA"
     }

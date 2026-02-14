@@ -53,6 +53,13 @@ export default function ServiciosPage() {
                             key={service.id}
                             className="p-8 lg:p-12 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 group"
                         >
+                            <div className="h-48 overflow-hidden mb-6">
+                                <img
+                                    src={service.id === 1 ? '/content/servicios/video.jpg' : service.id === 2 ? '/content/servicios/foto.jpg' : '/content/servicios/consultoria.jpg'}
+                                    alt={service.title}
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                />
+                            </div>
                             <span className="text-5xl mb-6 block">{service.icon}</span>
                             <h2 className="text-2xl font-medium mb-4 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
                                 {service.title}
