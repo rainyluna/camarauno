@@ -45,44 +45,51 @@ export default function ServiciosPage() {
                 </div>
             </section>
 
-            {/* Services Grid */}
-            <section className="px-8 pb-24 lg:px-16">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {services.map((service) => (
-                        <article
-                            key={service.id}
-                            className="group relative overflow-hidden last:md:col-span-2 last:md:max-w-[calc(50%-0.75rem)]"
-                        >
-                            {/* Image with overlay */}
-                            <div className="relative h-72 overflow-hidden">
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                                <h2 className="absolute bottom-6 left-6 right-6 text-2xl lg:text-3xl font-semibold text-white">
+            {/* Services — Full Width Immersive Sections */}
+            <section>
+                {services.map((service, index) => (
+                    <article
+                        key={service.id}
+                        className="grid grid-cols-1 grid-rows-1 w-full overflow-hidden group border-b border-zinc-200 dark:border-zinc-800 last:border-0"
+                    >
+                        {/* Background Image */}
+                        <img
+                            src={service.image}
+                            alt={service.title}
+                            className="col-start-1 row-start-1 w-full h-full object-cover"
+                        />
+                        {/* Gradient Overlays */}
+                        <div className="col-start-1 row-start-1 bg-linear-to-r from-black/80 via-black/40 to-transparent" />
+                        <div className="col-start-1 row-start-1 bg-linear-to-t from-black/60 via-transparent to-black/20" />
+
+                        {/* Content */}
+                        <div className="col-start-1 row-start-1 z-10 flex items-center">
+                            <div className={`px-8 lg:px-16 py-24 max-w-2xl ${index % 2 === 1 ? 'ml-auto text-right' : ''}`}>
+                                {/* Title */}
+                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
                                     {service.title}
                                 </h2>
-                            </div>
 
-                            {/* Content */}
-                            <div className="p-6 lg:p-8 bg-zinc-50 dark:bg-zinc-900 border border-t-0 border-zinc-200 dark:border-zinc-800">
-                                <p className="text-zinc-600 dark:text-zinc-400 mb-5 leading-relaxed">
+                                {/* Description */}
+                                <p className="text-lg text-white/80 mb-8 leading-relaxed">
                                     {service.description}
                                 </p>
-                                <ul className="space-y-2">
+
+                                {/* Feature Tags */}
+                                <div className={`flex gap-3 flex-wrap ${index % 2 === 1 ? 'justify-end' : ''}`}>
                                     {service.features.map((feature) => (
-                                        <li key={feature} className="flex items-start gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                                            <span className="mt-1.5 w-1.5 h-1.5 bg-zinc-400 dark:bg-zinc-500 rounded-full shrink-0" />
+                                        <span
+                                            key={feature}
+                                            className="px-4 py-2 text-sm font-medium bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-colors"
+                                        >
                                             {feature}
-                                        </li>
+                                        </span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                        </article>
-                    ))}
-                </div>
+                        </div>
+                    </article>
+                ))}
             </section>
 
             {/* Process Section */}
@@ -115,7 +122,7 @@ export default function ServiciosPage() {
                 </h2>
                 <Link
                     href="/contacto"
-                    className="inline-block px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold tracking-wide hover:opacity-90 transition-opacity"
+                    className="inline-block px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold tracking-wide hover:opacity-90 transition-opacity"
                 >
                     HABLEMOS
                 </Link>

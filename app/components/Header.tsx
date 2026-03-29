@@ -47,7 +47,7 @@ export default function Header() {
                     <span key={link.name} className="flex items-center gap-8">
                         <Link
                             href={link.href}
-                            className={`cursor-pointer transition-colors ${showSolid ? 'hover:text-zinc-900 dark:hover:text-zinc-100' : 'hover:text-white'}`}
+                            className={`cursor-pointer transition-colors ${showSolid ? 'hover:text-zinc-900 dark:hover:text-zinc-100' : 'hover:text-white'} ${link.name === 'Contacto' ? 'font-bold' : ''}`}
                         >
                             {link.name}
                         </Link>

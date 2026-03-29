@@ -75,14 +75,18 @@ const featuredProjects = [
 
 // Clients data
 const clients = [
-  { name: "Banco", logo: "/clientes/banco.webp" },
-  { name: "Leucemia", logo: "/clientes/leucemia.webp" },
-  { name: "Pones", logo: "/clientes/pones.webp" },
-  { name: "Sagala", logo: "/clientes/sagala.webp" },
+  { name: "Banco de la República", logo: "/clientes/banco.webp" },
+  { name: "Fundación Pones", logo: "/clientes/pones.webp" },
+  { name: "Fundación Sagala", logo: "/clientes/sagala.webp" },
+  { name: "Fundación Guiando Territorio", logo: "/clientes/territorio.webp" },
+  { name: "Academia Llano y Joropo", logo: "/clientes/llano-joropo.webp" },
   { name: "Sant'Egidio", logo: "/clientes/santegidio.webp" },
-  { name: "Territorio", logo: "/clientes/territorio.webp" },
   { name: "SCE", logo: "/clientes/scp.webp" },
-  { name: "Parasoles", logo: "/clientes/parasoles.webp" },
+  { name: "Parasoles Tropicales", logo: "/clientes/parasoles.webp" },
+  { name: "Fundación Colombiana de Leucemia y Linfoma", logo: "/clientes/leucemia.webp" },
+  { name: "Dann Carlton Hotel", logo: "/clientes/dann-carlton.webp" },
+  { name: "Milagro Tequila", logo: "/clientes/milagro.webp" },
+  { name: "Diesel", logo: "/clientes/diesel.webp" },
 ];
 
 
@@ -247,7 +251,7 @@ function FeaturedProjects() {
 // ============================================================
 function ClientsSection() {
   return (
-    <section className="px-8 py-24 lg:px-16">
+    <section className="px-8 py-24 lg:px-16 bg-zinc-100 dark:bg-zinc-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-sm font-semibold tracking-widest text-zinc-400 dark:text-zinc-500">
@@ -258,7 +262,7 @@ function ClientsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
           {clients.map((client, index) => (
             <div
               key={index}
@@ -369,7 +373,7 @@ function ServiciosSection() {
                 alt={service.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20" />
 
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col justify-end p-6">

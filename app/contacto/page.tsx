@@ -11,11 +11,32 @@ export default function ContactoPage() {
         service: "",
         message: "",
     });
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [errorMsg, setErrorMsg] = useState("");
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission
-        console.log(formData);
+        setStatus("loading");
+        setErrorMsg("");
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            if (!res.ok) {
+                const data = await res.json();
+                throw new Error(data.error || "Error al enviar el mensaje.");
+            }
+
+            setStatus("success");
+            setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+        } catch (err) {
+            setStatus("error");
+            setErrorMsg(err instanceof Error ? err.message : "Error al enviar el mensaje.");
+        }
     };
 
     return (
@@ -159,11 +180,23 @@ export default function ContactoPage() {
                             />
                         </div>
 
+                        {status === "success" && (
+                            <div className="px-4 py-3 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300 text-sm">
+                                ¡Mensaje enviado! Te responderemos pronto.
+                            </div>
+                        )}
+                        {status === "error" && (
+                            <div className="px-4 py-3 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm">
+                                {errorMsg}
+                            </div>
+                        )}
+
                         <button
                             type="submit"
-                            className="w-full px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold tracking-wide hover:opacity-90 transition-opacity"
+                            disabled={status === "loading"}
+                            className="w-full px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold tracking-wide hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            ENVIAR MENSAJE
+                            {status === "loading" ? "ENVIANDO..." : "ENVIAR MENSAJE"}
                         </button>
                     </form>
                 </section>

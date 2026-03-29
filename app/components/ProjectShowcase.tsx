@@ -38,23 +38,21 @@ export default function ProjectShowcase({ projects, showTitle = true }: ProjectS
             {projects.map((project, index) => (
                 <article
                     key={project.id}
-                    className="relative w-full h-[70vh] min-h-[500px] overflow-hidden group border-b border-zinc-200 dark:border-zinc-800 last:border-0"
+                    className="grid grid-cols-1 grid-rows-1 w-full overflow-hidden group border-b border-zinc-200 dark:border-zinc-800 last:border-0"
                 >
                     {/* Background Image */}
-                    <div className="absolute inset-0">
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                        />
-                        {/* Gradient Overlays */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
-                    </div>
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="col-start-1 row-start-1 w-full h-full object-cover"
+                    />
+                    {/* Gradient Overlays */}
+                    <div className="col-start-1 row-start-1 bg-linear-to-r from-black/80 via-black/40 to-transparent" />
+                    <div className="col-start-1 row-start-1 bg-linear-to-t from-black/60 via-transparent to-black/20" />
 
                     {/* Content */}
-                    <div className="relative z-10 h-full flex items-center">
-                        <div className={`px-8 lg:px-16 max-w-2xl ${index % 2 === 1 ? 'ml-auto text-right' : ''}`}>
+                    <div className="col-start-1 row-start-1 z-10 flex items-center">
+                        <div className={`px-8 lg:px-16 py-8 lg:py-10 max-w-3xl ${index % 2 === 1 ? 'ml-auto text-right' : ''}`}>
                             {/* Category Badge */}
                             <span className="inline-block px-4 py-1 text-xs font-semibold tracking-widest text-white/80 border border-white/30 mb-6">
                                 {project.category}
@@ -85,6 +83,8 @@ export default function ProjectShowcase({ projects, showTitle = true }: ProjectS
                             {/* CTA Button */}
                             <Link
                                 href={project.href || "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className={`group/btn inline-flex items-center gap-3 px-6 py-3 bg-white text-zinc-900 font-semibold tracking-wide hover:bg-zinc-100 transition-all duration-300 ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}
                             >
                                 VER PROYECTO
